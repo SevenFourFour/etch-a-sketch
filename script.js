@@ -10,5 +10,9 @@ for (let i = 0; i < 16; i++) {
         const pixel = document.createElement('div')
         pixel.className = 'pixel'
         row.appendChild(pixel)
+        pixel.addEventListener('mouseenter', function (e) {
+            pixel.classList.add('hovered-pixel')
+        })
     }
 }
+
