@@ -2,6 +2,15 @@
 const pixel_container = document.getElementById('pixel-container')
 
 
+function getRandomColor() {
+    var letters = '0123457689ABCDEF'
+    var color = '#'
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)]
+    }
+    return color;
+}
+
 function newGrid(size) {
     for (let i = 0; i < size; i++) {
         const row = document.createElement('div')
@@ -13,7 +22,7 @@ function newGrid(size) {
             pixel.style.height = pixel.style.width
             row.appendChild(pixel)
             pixel.addEventListener('mouseenter', function (e) {
-                pixel.classList.add('hovered-pixel')
+                pixel.style.backgroundColor = getRandomColor()
             })
         }
     }
