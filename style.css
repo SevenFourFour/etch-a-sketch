@@ -4,8 +4,8 @@ body {
 }
 
 #pixel-container {
-    width: 432px;
-    height: 432px;
+    width: 500px;
+    height: 500px;
     border: 1px solid black;
     display: flex;
 }
@@ -13,7 +13,8 @@ body {
 .pixel {
     width: 25px;
     height: 25px;
-    border: 1px solid black;
+    box-sizing: border-box;
+    border: .4px solid black;
 }
 
 .hovered-pixel {
