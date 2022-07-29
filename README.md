@@ -6,3 +6,5 @@ The following app is a web-based recreation of the classic Etch-a-Sketch toy. Th
 - Implement basic styling in CSS
 - Interact with the page using event listeners in JS
 - Apply changes to the DOM with JS functions
+
+[Click here to access a demo of the application.](https://sevenfourfour.github.io/etch-a-sketch/)
